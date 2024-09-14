@@ -8,11 +8,11 @@ export default function solucao(pontosA: number, pontosB: number): string {
 
     return `TIME B VENCEU O SET`
 
-  } else if ((pontosA > pontosB) && pontosA < 25 || (pontosA > pontosB) && (pontosA - pontosB) <= 2 && pontosA > 25) {
+  } else if (pontosA > pontosB) {
 
     return `TIME A VENCENDO`
 
-  } else if ((pontosA < pontosB) && pontosB < 25 || (pontosB > pontosA) && (pontosB - pontosA) <= 2 && pontosB > 25) {
+  } else if (pontosA < pontosB) {
 
     return `TIME B VENCENDO`
 
