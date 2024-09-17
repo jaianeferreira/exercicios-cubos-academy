@@ -3,7 +3,7 @@ export default function solucao(
   notaAlunoB: number
 ): string {
   
-  if ((notaAlunoA - notaAlunoB) >= 1.5 || (notaAlunoB - notaAlunoA) <= -1.5) {
+  if ((notaAlunoA - notaAlunoB) >= 1.5 || (notaAlunoA - notaAlunoB) <= -1.5) {
 
     return `DUPLA INVALIDA`
 
