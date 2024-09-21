@@ -20,15 +20,12 @@ type Carrinho = {
     cartao: Cartao
 }
 
-type tipoTransacao = Lowercase<"crebito" | "debito">
+type tipoTransacao = Lowercase<"CREDITO" | "dEbItO">
+type NovoCarrinho = Omit<Carrinho, "tipoTransacao">
 
-type CarrinhoB = {
-    item: Item,
-    qtd: number,
-    desconto: number,
-    frete: number,
+type CarrinhoAtualizado = {
+    carrinho: NovoCarrinho,
     tipoTransacao: tipoTransacao,
-    cartao: Cartao
     endereco: {
         cep: string
         rua: string
