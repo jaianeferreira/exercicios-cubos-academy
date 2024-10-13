@@ -1,8 +1,6 @@
 function solucao(comprimento, largura) {
-  
-  let quantidade = (comprimento * 2) + (largura * 2)
-  
-  return quantidade
+
+  return (comprimento * 2) + (largura * 2)
   
 }
 

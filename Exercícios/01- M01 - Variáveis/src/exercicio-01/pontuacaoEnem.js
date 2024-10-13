@@ -1,8 +1,6 @@
 function solucao(linguagens, humanas, natureza, matematica) {
   
-  let soma = linguagens + humanas + natureza + matematica
-
-  return soma 
+  return linguagens + humanas + natureza + matematica
 
 }
 

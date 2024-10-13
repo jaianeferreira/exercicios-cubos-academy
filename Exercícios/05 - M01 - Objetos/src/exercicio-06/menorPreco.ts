@@ -1,8 +1,7 @@
 type TProduto = { loja: string; preco: number };
 
 function solucao(produtosEncontrados: TProduto[]): string {
-
-  let lojaPreco = ""
+  let lojaPreco = ''
   let [{preco: precoAtual}] = produtosEncontrados
 
   for (let i = 0; i < produtosEncontrados.length; i++) {
@@ -11,9 +10,7 @@ function solucao(produtosEncontrados: TProduto[]): string {
       lojaPreco = produtosEncontrados[i].loja
     }
   }
-
 return lojaPreco
-
 }
 
 export default solucao;

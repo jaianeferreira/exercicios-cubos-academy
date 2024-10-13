@@ -1,8 +1,6 @@
 function solucao(quantidadeAcai) {
-  
-  let comprar_acai = quantidadeAcai < 40
 
-  return comprar_acai
+  return quantidadeAcai < 40
   
 }
 
