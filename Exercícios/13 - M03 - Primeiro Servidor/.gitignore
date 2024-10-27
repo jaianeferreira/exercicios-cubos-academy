@@ -1,0 +1,5 @@
+node_modules/
+tempCode*
+req.http
+dist/
+.env
