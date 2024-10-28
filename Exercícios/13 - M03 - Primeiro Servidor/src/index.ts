@@ -1,13 +1,14 @@
 import 'dotenv/config'
-
 import express from 'express'
+import {soma, subtracao, divisao, multiplicacao} from './controladores'
 
-import rotas from './rotas'
+const app = express()
 
-const servidor = express()
+app.get('/soma', soma)
+app.get('/subtracao', subtracao)
+app.get('/divisao', divisao)
+app.get('/multiplicacao', multiplicacao)
 
-servidor.use(rotas)
-
-servidor.listen(3000)
+app.listen(3000)
 
 
